@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend do CRUD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alifilho/crud-mesmo.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "ReactJS",
+    "Javascript",
+    "CRUD"
+  ],
+  "author": "Alisson Oliveira <alissonoliveiram@gmail.com>, João Cunha <jvgcunha2002@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alifilho/crud-mesmo/issues"
+  },
+  "homepage": "https://github.com/Alifilho/crud-mesmo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
