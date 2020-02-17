@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
+mongoose.set('useCreateIndex', true);
 mongoose.connect(
     "mongodb+srv://alifilho:aomc020702@mongo-crud-u3q8x.mongodb.net/test?retryWrites=true&w=majority", {
         useNewUrlParser: true,
@@ -16,6 +17,6 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.get('/', routes);
+app.get('/users', routes);
 
 app.listen(3333);
