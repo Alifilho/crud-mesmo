@@ -5,8 +5,13 @@ module.exports = {
     async auth(req, res) {
         const { email, password } = req.body;
 
-        if(await User.findOne({ email })) {
-            
+        let user = await User.findOne({ email });
+
+        if(user) {
+            abc = bcrypt.compareSync(password, user.password);
+
+            console.log(abc);
+            res.json({ message: "OK" });
         }
     }
 }
