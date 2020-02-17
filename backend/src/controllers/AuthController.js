@@ -8,10 +8,9 @@ module.exports = {
         let user = await User.findOne({ email });
 
         if(user) {
-            abc = bcrypt.compareSync(password, user.password);
-
-            console.log(abc);
-            res.json({ message: "OK" });
+            if(bcrypt.compareSync(password, user.password)) {
+                
+            }
         }
     }
 }
