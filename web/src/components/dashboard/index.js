@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-import optionsTest from '../../util/optionsTest';
-
 function Dashboard({ onSubmit }) {
     const [ options, setOptions ] = useState([]);
 
@@ -25,16 +23,24 @@ function Dashboard({ onSubmit }) {
         let optionSelect = document.querySelector('select#optionsForm').value;
         switch(optionSelect) {
             case 'password':
-                optionsTest('password');
+                if(!options.includes('password')) {
+                    setOptions([...options, 'password']);
+                }
                 break;
             case 'name':
-                optionsTest('name');
+                if(!options.includes('name')) {
+                    setOptions([...options, 'name']);
+                }
                 break;
             case 'birthday':
-                optionsTest('birthday');
+                if(!options.includes('birthday')) {
+                    setOptions([...options, 'birthday']);
+                }
                 break;
             case 'cpf':
-                optionsTest('cpf');
+                if(!options.includes('cpf')) {
+                    setOptions([...options, 'cpf']);
+                }
                 break;
             default:
                 console.log('Error');
