@@ -25,6 +25,7 @@ function Dashboard({ onSubmit }) {
         let optionSelect = document.querySelector('select#optionsForm').value;
         document.querySelector('div.form').style.display = "block";
         document.querySelector('form.login-form').style.display = "grid";
+        
         switch(optionSelect) {
             case 'password':
                 if(!options.includes('password')) {
