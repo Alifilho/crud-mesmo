@@ -13,6 +13,7 @@ function Dashboard({ onSubmit }) {
     const [ birthday, setBirthday ] = useState("");
 
     async function handleUpdateUser(e) {
+        
         e.preventDefault();
     }
 
